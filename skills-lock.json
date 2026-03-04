@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "alignfirst": {
+      "source": "paleo/alignfirst",
+      "sourceType": "github",
+      "computedHash": "1f0943e20de581f518e894842c19171f47734a131d2b178b5029ba23999282e8"
+    }
+  }
+}
