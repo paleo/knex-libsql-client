@@ -1,8 +1,16 @@
-# AGENTS
-
-This file contains instructions for working with agents and conducting research.
+# Development instructions
 
 Always ignore the `_plans` directory when searching the codebase.
+
+## Local environment commands
+
+| Command | Purpose |
+| --- | --- |
+| `npm install` | Install dependencies |
+| `npm run build` | Compile TypeScript |
+| `npm test` | Run tests |
+| `npm run lint` | Check code style |
+| `npm run lint:fix` | Auto-fix code style |
 
 ## Ticket ID
 
