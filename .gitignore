@@ -1,2 +1,7 @@
+.local
+
 _plans/*
 !_plans/.gitkeep
+
+node_modules
+dist
