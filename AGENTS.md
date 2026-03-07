@@ -18,7 +18,7 @@ ALWAYS consider using both the **documentation** and the **skills** before anyth
 | `npm run lint` | Check code style |
 | `npm run lint:fix` | Auto-fix code style |
 
-## Ticket ID
+## AlignFirst - Ticket ID
 
 _Ticket ID_: Format is numeric. Use the ticket ID if explicitly provided. Otherwise, deduce it from the current branch name (no confirmation needed). If the branch name is unavailable, get it via `git branch --show-current`. Only ask the user as a last resort.
 
