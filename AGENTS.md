@@ -1,6 +1,12 @@
 # Development instructions
 
-Always ignore the `_plans` directory when searching the codebase.
+Always ignore the `.plans` directory when searching the codebase.
+
+## Discover and Read Documentation
+
+ALWAYS consider using both the **documentation** and the **skills** before anything else.
+
+**Documentation**: Run `npm run docfront` to browse available project documentation in `docs/`. Then list the subdirectories you need (`npm run docfront -- --dir topic-a --dir topic-b/sub-topic-c`) or list everything (`npm run docfront -- --recursive`).
 
 ## Local environment commands
 

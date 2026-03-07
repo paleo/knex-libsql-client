@@ -1,6 +1,9 @@
 ---
-name: code-style
-description: Code style conventions and formatting rules. Always read before writing code, even for code inside a spec or a plan.
+title: Code Style Guidelines
+summary: Code style conventions and formatting rules for this project.
+read_when:
+  - writing any code, even inside a spec or a plan
+  - unsure about formatting, naming, or language-specific conventions
 ---
 
 # Code Style Guidelines

@@ -1,7 +1,6 @@
 .local
 
-_plans/*
-!_plans/.gitkeep
+.plans
 
 node_modules
 dist
