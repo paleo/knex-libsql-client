@@ -6,7 +6,7 @@ Always ignore the `.plans` directory when searching the codebase.
 
 ALWAYS consider using both the **documentation** and the **skills** before anything else.
 
-**Documentation**: Run `npm run docfront` to browse available project documentation in `docs/`. Then list the subdirectories you need (`npm run docfront -- --dir topic-a --dir topic-b/sub-topic-c`) or list everything (`npm run docfront -- --recursive`).
+**Documentation**: Run `npm run docfront -- --recursive` to browse all available project documentation.
 
 ## Local environment commands
 
