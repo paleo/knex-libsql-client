@@ -5,6 +5,11 @@
       "source": "paleo/alignfirst",
       "sourceType": "github",
       "computedHash": "1f0943e20de581f518e894842c19171f47734a131d2b178b5029ba23999282e8"
+    },
+    "docfront": {
+      "source": "paleo/docfront",
+      "sourceType": "github",
+      "computedHash": "99c98d9f127e907a10280a743ccf069604c70aff440ce4efe898bce788480629"
     }
   }
 }
