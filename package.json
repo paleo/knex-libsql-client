@@ -1,6 +1,6 @@
 {
   "name": "knex-libsql-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Knex dialect for @libsql/client — the only maintained asynchronous SQLite driver for Node.js.",
   "keywords": [
