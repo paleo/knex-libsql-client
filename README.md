@@ -78,6 +78,7 @@ After a fresh clone:
 
 ```sh
 npm install
+mkdir .plans   # or use plans:setup if you have a team plans repository
 npm run workspace -- setup
 ```
 
