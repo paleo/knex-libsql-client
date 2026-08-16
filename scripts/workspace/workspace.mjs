@@ -1,0 +1,38 @@
+// Workspace lifecycle wrapper. This package has no dev server, so the system
+// runs portless: no ports are allocated, and there is no `dev` script.
+
+import { execFileSync, execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
+import { runWorkspace } from "@paleo/workspace";
+
+await runWorkspace({
+  workspaceScript: fileURLToPath(import.meta.url),
+
+  sharedDirs: [".local", ".plans"],
+  runtimeDir: ".local-wt",
+
+  gitignoredFiles: [],
+
+  preSetup: ({ isMainWorktree, currentWorktree }) => {
+    if (!isMainWorktree) return;
+    // `.plans` must be usable
+    execFileSync("npx", ["--no", "plans-share", "check"], {
+      cwd: currentWorktree,
+      stdio: "inherit",
+    });
+  },
+
+  finalizeWorkspace: ({ currentWorktree, progress }) => {
+    progress("npm install");
+    execSync("npm install", { stdio: "inherit", cwd: currentWorktree });
+    progress("npm run build");
+    execSync("npm run build", { stdio: "inherit", cwd: currentWorktree });
+  },
+
+  formatSummary: ({ name, branch, currentWorktree, isMainWorktree, status }) => `
+Workspace ${name} — ${status}
+  Type:   ${isMainWorktree ? "main" : "linked"}
+  Branch: ${branch}
+  Path:   ${currentWorktree}
+`,
+});

@@ -32,8 +32,10 @@
   "devDependencies": {
     "@biomejs/biome": "~2.4.5",
     "@libsql/client": "~0.17.0",
+    "@paleo/docmap": "~0.9.0",
+    "@paleo/plans-share": "~0.6.0",
+    "@paleo/workspace": "~0.30.1",
     "@types/node": "~25.3.3",
-    "docfront": "^0.2.1",
     "knex": "~3.1.0",
     "typescript": "~5.9.3",
     "vitest": "~4.0.18"
@@ -45,7 +47,10 @@
     "lint:fix": "biome check . --write",
     "check": "npm run lint && npm run build && npm test",
     "prepublishOnly": "npm run check",
-    "docfront": "docfront"
+    "docmap": "docmap",
+    "workspace": "node scripts/workspace/workspace.mjs",
+    "plans:setup": "plans-share setup --folder knex-libsql-client",
+    "plans:sync": "plans-share sync"
   },
   "files": [
     "dist"

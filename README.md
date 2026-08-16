@@ -72,6 +72,17 @@ const db = createLibsqlKnex({
 | `authToken` | Auth token for remote LibSQL connections. |
 | `initCommands` | Array of SQL statements to execute on each new connection, in order. Useful for PRAGMAs such as `PRAGMA foreign_keys = ON`. A failure in any command discards the connection. |
 
+## Contribute
+
+After a fresh clone:
+
+```sh
+npm install
+npm run workspace -- setup
+```
+
+See [DEVELOPMENT.md](DEVELOPMENT.md) for the development workflow.
+
 ## License
 
 MIT
