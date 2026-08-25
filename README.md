@@ -82,7 +82,7 @@ mkdir .plans   # or use plans:setup if you have a team plans repository
 npm run workspace -- setup
 ```
 
-See [DEVELOPMENT.md](DEVELOPMENT.md) for the development workflow.
+See [DEVELOPERS.md](DEVELOPERS.md) for the development workflow.
 
 ## License
 
