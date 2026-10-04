@@ -1,6 +1,6 @@
 # Developer Guide
 
-The everyday workflow of this repository. Run `npm run docmap` for the design documentation.
+The everyday workflow of this repository. Run `npx alignfirst docmap` for the design documentation.
 
 ## Stack and layout
 
@@ -15,7 +15,7 @@ Run `npm run workspace -- --guide` to learn the full procedures.
 ## Conventions
 
 - _Ticket ID_: numeric.
-- _Branch naming_: `<type>/<ticket-id>` (e.g. `feat/1`).
+- _Branch naming_: `{TICKET_ID}/{1-3-words}`, with a description of 1 to 3 words (e.g. `12/blob-streaming`).
 - _Commit messages_: conventional commits; when a ticket applies, prefix its ID with `#` (e.g. `fix: [#123] handle empty blobs`).
 - _Default branch_: `main`.
 
@@ -27,6 +27,6 @@ Run `npm run workspace -- --guide` to learn the full procedures.
 | `npm test` | Run the test suite |
 | `npm run lint` / `npm run lint:fix` | Check / fix with Biome |
 | `npm run check` | Lint + build + test — run before any push |
-| `npm run docmap` | Browse the project documentation |
+| `npx alignfirst docmap` | Browse the project documentation |
 | `npm run workspace -- <command>` | Manage worktree workspaces (`--guide` for the procedures) |
-| `npm run plans:sync` | Publish and retrieve the task plans (`.plans`) |
+| `npx alignfirst sync` | Publish and retrieve the task plans (`.plans`) |

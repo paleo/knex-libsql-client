@@ -16,7 +16,7 @@ await runWorkspace({
   preSetup: ({ isMainWorktree, currentWorktree }) => {
     if (!isMainWorktree) return;
     // `.plans` must be usable
-    execFileSync("npx", ["--no", "plans-share", "check"], {
+    execFileSync("npx", ["alignfirst", "plans", "check"], {
       cwd: currentWorktree,
       stdio: "inherit",
     });

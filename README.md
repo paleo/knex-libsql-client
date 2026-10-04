@@ -1,21 +1,6 @@
 # knex-libsql-client
 
-A [Knex](https://knexjs.org/) dialect for [@libsql/client](https://github.com/tursodatabase/libsql-client-ts), which is the only maintained async SQLite driver for Node.js.
-
-## Why async SQLite?
-
-The established SQLite drivers for Node.js are either deprecated or synchronous:
-
-- **`sqlite3`** (`node-sqlite3`) — deprecated and no longer maintained
-- **`better-sqlite3`** — synchronous
-- **Node.js built-in `node:sqlite`** — synchronous
-
-Synchronous access works fine when SQLite is used like a conventional relational database: a single file, text and numeric columns, no blobs, no large amounts of data. But SQLite can be used differently:
-
-- **As a file container** — storing images or binary assets directly in a database can be [faster than the filesystem](https://sqlite.org/fasterthanfs.html). Reading large blobs synchronously blocks the Node.js event loop.
-- **Multi-tenant architectures** — one database per customer is a natural fit for SQLite. A synchronous driver serializes all I/O across every concurrent request.
-
-In these scenarios, blocking the event loop is not acceptable. `@libsql/client` is the only maintained driver that keeps all database I/O fully asynchronous.
+A [Knex](https://knexjs.org/) dialect for [@libsql/client](https://github.com/tursodatabase/libsql-client-ts).
 
 ## Install
 
@@ -78,9 +63,11 @@ After a fresh clone:
 
 ```sh
 npm install
-mkdir .plans   # or use plans:setup if you have a team plans repository
+mkdir .plans   # or `npx alignfirst plans setup <clone-path>` with the team plans repository
 npm run workspace -- setup
 ```
+
+The tooling runs [AlignFirst](https://github.com/paleo/alignfirst) through `npx alignfirst`. Install it globally (`npm install -g alignfirst`) to use the bare `alignfirst` command.
 
 See [DEVELOPERS.md](DEVELOPERS.md) for the development workflow.
 

@@ -2,12 +2,11 @@
   "name": "knex-libsql-client",
   "version": "0.1.1",
   "license": "MIT",
-  "description": "Knex dialect for @libsql/client — the only maintained asynchronous SQLite driver for Node.js.",
+  "description": "Knex dialect for @libsql/client.",
   "keywords": [
     "knex",
     "sqlite",
-    "libsql",
-    "async"
+    "libsql"
   ],
   "repository": {
     "type": "git",
@@ -30,11 +29,9 @@
     "knex": ">=3.0.0"
   },
   "devDependencies": {
+    "@alignfirst/workspace": "~0.35.0",
     "@biomejs/biome": "~2.4.5",
     "@libsql/client": "~0.17.0",
-    "@paleo/docmap": "~0.9.1",
-    "@paleo/plans-share": "~0.6.1",
-    "@alignfirst/workspace": "~0.34.0",
     "@types/node": "~25.3.3",
     "knex": "~3.1.0",
     "typescript": "~5.9.3",
@@ -47,10 +44,7 @@
     "lint:fix": "biome check . --write",
     "check": "npm run lint && npm run build && npm test",
     "prepublishOnly": "npm run check",
-    "docmap": "docmap",
-    "workspace": "node scripts/workspace/workspace.mjs",
-    "plans:setup": "plans-share setup --folder knex-libsql-client",
-    "plans:sync": "plans-share sync"
+    "workspace": "node scripts/workspace/workspace.mjs"
   },
   "files": [
     "dist"
