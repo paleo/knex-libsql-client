@@ -1,8 +1,8 @@
 # Development instructions
 
-## Seek project conventions and documentation
+## Start every session with the project context
 
-Run `npx -y alignfirst context` once from the repository root, _before_ any investigation or code exploration. It prints the project conventions, the documentation map, and the AlignFirst protocols.
+Run `npx -y alignfirst context` from the repository root as your first command, whatever the task. It prints the project conventions (ticket IDs, branch names, commits), the documentation map, and the AlignFirst protocols.
 
 ### Essential Documentation
 
@@ -24,6 +24,6 @@ Always read before any investigation or work:
 
 ## Workspaces
 
-A **workspace** is a git worktree (with its branch) plus its own dev setup: symlinked shared directories and seeded config files. Workspaces are isolated, so you can work on several branches in parallel. This repository has no dev server, so the system runs portless: nothing to start, no `dev` script.
+A workspace is a Git worktree with shared `.plans` and `.local`, installed dependencies, and a compiled package. Setup validates the existing plans and runtime exclusions, then runs `npm install` and `npm run build`. This repository has no dev server or ports.
 
-Run `npm run workspace -- --guide` for the full procedures.
+Run `npx -y alignfirst workspace --guide` for the full procedures. Exclude `.plans`, `.local`, and `.local-wt` from broad codebase searches.

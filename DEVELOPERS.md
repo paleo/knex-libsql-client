@@ -8,9 +8,9 @@ A single TypeScript package (ESM only), published as `knex-libsql-client`: a Kne
 
 ## Workspaces
 
-A workspace is a git worktree plus its setup: `.plans` and `.local` symlinked to the main worktree, then `npm install` and `npm run build`. This repository has no dev server, so the tooling runs portless: nothing to start, no `dev` script.
+A workspace is a Git worktree with `.plans` and `.local` shared from main, then `npm install` and `npm run build`. Setup requires usable, ignored, untracked `.plans` and `.local-wt`. The existing plans link points into the separate work-files repository; preserve its location and history. `.local` contains the shared Knex reference checkout.
 
-Run `npm run workspace -- --guide` to learn the full procedures.
+Successful setup leaves dependencies installed and the package compiled. This repository has no dev server or ports. Run `npx -y alignfirst workspace --guide` for lifecycle procedures. External worktree owners run `npx -y alignfirst workspace teardown` before deleting their checkout.
 
 ## Conventions
 
@@ -28,5 +28,5 @@ Run `npm run workspace -- --guide` to learn the full procedures.
 | `npm run lint` / `npm run lint:fix` | Check / fix with Biome |
 | `npm run check` | Lint + build + test — run before any push |
 | `npx alignfirst docmap` | Browse the project documentation |
-| `npm run workspace -- <command>` | Manage worktree workspaces (`--guide` for the procedures) |
+| `npx -y alignfirst workspace <command>` | Manage worktree workspaces (`--guide` for the procedures) |
 | `npx alignfirst sync` | Publish and retrieve the task plans (`.plans`) |

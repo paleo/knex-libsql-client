@@ -62,9 +62,8 @@ const db = createLibsqlKnex({
 After a fresh clone:
 
 ```sh
-npm install
 mkdir .plans   # or `npx alignfirst plans setup <clone-path>` with the team plans repository
-npm run workspace -- setup
+npx -y alignfirst workspace setup
 ```
 
 The tooling runs [AlignFirst](https://github.com/paleo/alignfirst) through `npx alignfirst`. Install it globally (`npm install -g alignfirst`) to use the bare `alignfirst` command.

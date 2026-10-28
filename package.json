@@ -29,7 +29,6 @@
     "knex": ">=3.0.0"
   },
   "devDependencies": {
-    "@alignfirst/workspace": "~0.35.0",
     "@biomejs/biome": "~2.4.5",
     "@libsql/client": "~0.17.0",
     "@types/node": "~25.3.3",
@@ -43,8 +42,7 @@
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
     "check": "npm run lint && npm run build && npm test",
-    "prepublishOnly": "npm run check",
-    "workspace": "node scripts/workspace/workspace.mjs"
+    "prepublishOnly": "npm run check"
   },
   "files": [
     "dist"
