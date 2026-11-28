@@ -21,12 +21,12 @@ Successful setup leaves dependencies installed and the package compiled. This re
 
 ## Everyday commands
 
-| Command | Purpose |
-|---------|---------|
-| `npm run build` | Compile TypeScript |
-| `npm test` | Run the test suite |
-| `npm run lint` / `npm run lint:fix` | Check / fix with Biome |
-| `npm run check` | Lint + build + test — run before any push |
-| `npx alignfirst docmap` | Browse the project documentation |
+| Command                                 | Purpose                                                   |
+| --------------------------------------- | --------------------------------------------------------- |
+| `npm run build`                         | Compile TypeScript                                        |
+| `npm test`                              | Run the test suite                                        |
+| `npm run lint` / `npm run lint:fix`     | Check / fix with Biome                                    |
+| `npm run check`                         | Lint + build + test — run before any push                 |
+| `npx alignfirst docmap`                 | Browse the project documentation                          |
 | `npx -y alignfirst workspace <command>` | Manage worktree workspaces (`--guide` for the procedures) |
-| `npx alignfirst sync` | Publish and retrieve the task plans (`.plans`) |
+| `npx alignfirst sync`                   | Publish and retrieve the task plans (`.plans`)            |
