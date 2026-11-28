@@ -3,7 +3,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "suspicious": {
         "noExplicitAny": "off"
       },
@@ -65,11 +65,18 @@
     "includes": [
       "**",
       "!**/.local",
-      "!**/_plans",
+      "!**/.local-wt",
+      "!**/.plans",
       "!**/dist",
       "!**/node_modules",
-      "!**/package.json"
+      "!**/package.json",
+      "!**/package-lock.json"
     ]
+  },
+  "markdown": {
+    "parser": {
+      "frontmatter": true
+    }
   },
   "vcs": {
     "enabled": true,

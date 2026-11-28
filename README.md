@@ -50,11 +50,11 @@ const db = createLibsqlKnex({
 
 ### Connection options
 
-| Option | Description |
-| --- | --- |
-| `url` | Database URL. Use `file:./path/to/db.sqlite` for a local file, `:memory:` for in-memory, or an `https://` / `wss://` URL for a remote LibSQL server (e.g. Turso). |
-| `filename` | Alternative to `url` for local files — converted to a `file:` URL automatically. |
-| `authToken` | Auth token for remote LibSQL connections. |
+| Option         | Description                                                                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `url`          | Database URL. Use `file:./path/to/db.sqlite` for a local file, `:memory:` for in-memory, or an `https://` / `wss://` URL for a remote LibSQL server (e.g. Turso).             |
+| `filename`     | Alternative to `url` for local files — converted to a `file:` URL automatically.                                                                                              |
+| `authToken`    | Auth token for remote LibSQL connections.                                                                                                                                     |
 | `initCommands` | Array of SQL statements to execute on each new connection, in order. Useful for PRAGMAs such as `PRAGMA foreign_keys = ON`. A failure in any command discards the connection. |
 
 ## Contribute

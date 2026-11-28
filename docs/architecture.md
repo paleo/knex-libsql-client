@@ -44,9 +44,9 @@ Nested transactions (savepoints) use the inherited `SAVEPOINT`/`RELEASE` SQL —
 
 ## Source Files
 
-| File | Purpose |
-| --- | --- |
-| `src/index.ts` | Public API: re-exports `ClientLibSQL`, exports `createLibsqlKnex` helper |
-| `src/client-libsql.ts` | `ClientLibSQL` class — connection and query layer |
-| `src/transaction-libsql.ts` | `TransactionLibSQL` class — transaction lifecycle |
-| `src/knex-libsql.d.ts` | Type declarations for Knex internal modules |
+| File                        | Purpose                                                                  |
+| --------------------------- | ------------------------------------------------------------------------ |
+| `src/index.ts`              | Public API: re-exports `ClientLibSQL`, exports `createLibsqlKnex` helper |
+| `src/client-libsql.ts`      | `ClientLibSQL` class — connection and query layer                        |
+| `src/transaction-libsql.ts` | `TransactionLibSQL` class — transaction lifecycle                        |
+| `src/knex-libsql.d.ts`      | Type declarations for Knex internal modules                              |

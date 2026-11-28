@@ -25,16 +25,16 @@
     }
   },
   "peerDependencies": {
-    "@libsql/client": ">=0.17.0",
+    "@libsql/client": ">=0.17.0 <0.18.0",
     "knex": ">=3.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "~2.4.5",
-    "@libsql/client": "~0.17.0",
-    "@types/node": "~25.3.3",
-    "knex": "~3.1.0",
-    "typescript": "~5.9.3",
-    "vitest": "~4.0.18"
+    "@biomejs/biome": "~2.6.9",
+    "@libsql/client": "~0.17.4",
+    "@types/node": "~26.6.11",
+    "knex": "~3.3.0",
+    "typescript": "~7.0.2",
+    "vitest": "~5.1.2"
   },
   "scripts": {
     "build": "tsc",

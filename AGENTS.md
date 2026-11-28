@@ -13,14 +13,14 @@ Always read before any investigation or work:
 
 ## Local environment commands
 
-| Command | Purpose |
-| --- | --- |
-| `npm install` | Install dependencies |
-| `npm run build` | Compile TypeScript |
-| `npm test` | Run tests |
-| `npm run lint` | Check code style |
-| `npm run lint:fix` | Auto-fix code style |
-| `npm run check` | Lint + build + test |
+| Command            | Purpose              |
+| ------------------ | -------------------- |
+| `npm install`      | Install dependencies |
+| `npm run build`    | Compile TypeScript   |
+| `npm test`         | Run tests            |
+| `npm run lint`     | Check code style     |
+| `npm run lint:fix` | Auto-fix code style  |
+| `npm run check`    | Lint + build + test  |
 
 ## Workspaces
 
